@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 0;
+  background: #000000;
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  
+}
+
+
+
+.giveaway-card {
+  position: relative;
+  height: 80%;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 40px;
+  background: #000405;
+  -webkit-box-shadow: 0 8px 10px -9px #6dddff;
+          box-shadow: 0 8px 10px -9px #6dddff;
+  z-index: 5;
+  animation: light-effect 2s infinite;
+}
+
+.giveaway-card .content-box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.giveaway-card .content-box .heading h1 {
+  margin-bottom: 10px;
+  font-size: 80px;
+  letter-spacing: 3px;
+  color: #c2e8ff;
+  text-shadow: 0 0 5px #1aa7ff;
+  text-align: center;
+}
+
+.giveaway-card .content-box .heading p {
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: #62c3ffbe;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.giveaway-card .content-box .giveaway-detail {
+  margin-bottom: 25px;
+}
+
+.giveaway-card .content-box .giveaway-detail p {
+  color: #99daff6c;
+}
+
+.giveaway-card .content-box .countdown-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.giveaway-card .content-box .countdown-box .days, .giveaway-card .content-box .countdown-box .hours, .giveaway-card .content-box .countdown-box .mins, .giveaway-card .content-box .countdown-box .secs {
+  height: 170px;
+  min-width: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  background: #00050a;
+  border: 1px solid #89d4ff52;
+  box-shadow: 0 5px 6px -5px #00c3ff;
+
+}
+
+.giveaway-card .content-box .countdown-box .days .number, .giveaway-card .content-box .countdown-box .hours .number, .giveaway-card .content-box .countdown-box .mins .number, .giveaway-card .content-box .countdown-box .secs .number {
+  font-size: 90px;
+  font-weight: 600;
+  color: #c2e8ff;
+  text-shadow: 0 0 5px #1aa7ff;
+}
+
+.giveaway-card .content-box .countdown-box .days .label, .giveaway-card .content-box .countdown-box .hours .label, .giveaway-card .content-box .countdown-box .mins .label, .giveaway-card .content-box .countdown-box .secs .label {
+  font-size: 25px;
+  color: #d1eeff;
+}
+.container .content-box .heading a
+{
+  color: #c2e8ff;
+  text-decoration: none;
+}
+
+
+
+@keyframes light-effect {
+  0% {
+    -webkit-filter: drop-shadow(0 0 10px #47d4ff);
+            filter: drop-shadow(0 0 10px #47d4ff);
+  }
+  25% {
+    -webkit-filter: drop-shadow(0 0 10px #47d4ff);
+            filter: drop-shadow(0 0 10px #47d4ff);
+  }
+  75% {
+    -webkit-filter: drop-shadow(0 0 10px #47d4ff00);
+            filter: drop-shadow(0 0 10px #47d4ff00);
+  }
+  99% {
+    -webkit-filter: drop-shadow(0 0 10px #47d4ff00);
+            filter: drop-shadow(0 0 10px #47d4ff00);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .giveaway-card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .giveaway-card .img-box {
+    margin: 0 0 30px;
+  }
+}

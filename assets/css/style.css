@@ -24,9 +24,12 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 40px 0;
-  background: #000000;
-  font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
+  background-image: url('../../istockphoto-464406263-1024x1024.jpg\ 2'); /* Add the local path here */
+  background-size:contain;
+  background-position:center center;
+  background-repeat:repeat;
+  background-position-y:-175px ;
+  background-position-x: -260px;
   
 }
 

@@ -44,8 +44,8 @@ document.querySelector(".re-ideathon").addEventListener("click", function (event
   event.preventDefault(); // Prevent default action if it's a link
   if (!countdownEnd) { // Initialize only once
     countdownEnd = new Date();
-    countdownEnd.setDate(countdownEnd.getDate() + 1);
-    countdownEnd.setHours(countdownEnd.getHours() + 5);
+    countdownEnd.setHours(countdownEnd.getHours() + 11);
+    countdownEnd.setMinutes(countdownEnd.getMinutes() + 20);
     timeCapture(); // Start the countdown
   }
 });

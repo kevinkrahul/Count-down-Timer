@@ -45,7 +45,7 @@ document.querySelector(".re-ideathon").addEventListener("click", function (event
   if (!countdownEnd) { // Initialize only once
     countdownEnd = new Date();
     countdownEnd.setHours(countdownEnd.getHours() + 11);
-    countdownEnd.setMinutes(countdownEnd.getMinutes() + 20);
+    countdownEnd.setMinutes(countdownEnd.getMinutes() + 10);
     timeCapture(); // Start the countdown
   }
 });
